@@ -1,0 +1,608 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header {
+  padding: 1rem;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .logo_container a {
+  text-decoration: none;
+  color: gray;
+}
+
+header .logo_container a:hover {
+  color: #ffd000;
+}
+
+header nav {
+  width: 100%;
+}
+
+.nav_links {
+  width: 50%;
+}
+
+.nav_links ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav_link {
+  text-decoration: none;
+  color: gray;
+}
+
+.nav_link:hover {
+  color: #ffd000;
+}
+
+.getStarted_container {
+  width: 12rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.getStarted_container button {
+  padding: 0.6rem 0.6rem;
+  background: #ffd000;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+.search-sec {
+  position: relative;
+  height: 85.5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+}
+
+.search-sec img {
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  width: 85%;
+  top: 0;
+  right: 0;
+}
+
+.search-sec h1 {
+  color: #040436;
+  top: 30%;
+  right: 55%;
+  font-size: 3.5rem;
+  z-index: 2;
+  text-shadow: 2px 2px gray;
+}
+
+.search-sec .search {
+  height: 15rem;
+  padding: 0 6.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+}
+
+.search-sec .contact_details {
+  width: 30rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  background-color: #ffd000;
+  bottom: 0;
+  right: 0;
+  font-weight: bold;
+  color: #494949;
+}
+
+.search-sec .contact_details .phone,
+.search-sec .contact_details .location {
+  padding: 1rem;
+}
+
+.search-sec .contact_details .phone span,
+.search-sec .contact_details .location span {
+  padding-left: 1rem;
+}
+
+.search-sec .contact_details .phone i,
+.search-sec .contact_details .location i {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.search_input {
+  width: 25rem;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.fa-search {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 15px;
+  color: gray;
+}
+
+#searchInput {
+  padding-left: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 80%;
+}
+
+.search_btn {
+  height: 100%;
+  padding: 1rem;
+  width: 20%;
+  background-color: #ffd000;
+}
+
+.statistics {
+  height: 55vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+}
+
+.appartments {
+  padding: 1rem;
+  background-color: #f5eded;
+}
+
+.appartment,
+.client,
+.employee,
+.awards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  height: 12rem;
+  background-color: #f5eded;
+}
+
+.appartment_num,
+.client_num,
+.employee_num,
+.awards_num {
+  font-size: 2rem;
+  font-family: "Oxygen";
+  font-style: normal;
+  font-weight: bold;
+  color: #ffd000;
+}
+
+.appartment_txt,
+.client_txt,
+.employee_txt,
+.awards_txt {
+  font-weight: bold;
+}
+
+.apparetment_img {
+  height: 20rem;
+}
+
+.room_details,
+.contact_details {
+  width: 50%;
+  font-size: 0.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+}
+
+.appartments_title {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.appartments_card {
+  width: 25rem;
+  padding: 1rem;
+}
+
+.model_card {
+  margin: 1rem;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.cards_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0.25%;
+          flex: 0 0.25%;
+}
+
+.veiw_apartments {
+  width: 45rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.veiw_apartments .view_btn {
+  background: white;
+  padding: 0.8rem 0.8rem;
+  border: 1px solid #040436;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.veiw_apartments .view_btn:hover {
+  background: #ffd000;
+}
+
+.guide_sec {
+  padding: 2rem;
+}
+
+.steps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.step-one,
+.step-two,
+.step-three {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  height: 25rem;
+  margin-top: 1rem;
+  padding: 7rem 2rem 2rem 2rem;
+  background: #ffd000;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: white;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.step-one .step_num,
+.step-two .step_num,
+.step-three .step_num {
+  font-size: 8rem;
+  letter-spacing: -10px;
+  position: absolute;
+  font-weight: 700;
+  top: 0;
+  left: 0;
+  -webkit-transform: translate(-20%, -48%);
+          transform: translate(-20%, -48%);
+}
+
+.step-two,
+.step-three {
+  background: white;
+  color: black;
+  margin-left: 1rem;
+}
+
+.service_img {
+  height: 100%;
+  width: 100%;
+}
+
+.meet_agents {
+  background-color: #f5eded;
+}
+
+.awsome_container {
+  position: relative;
+}
+
+.awsome_img {
+  width: 100%;
+  height: 100%;
+}
+
+.location_add,
+.location_add2 {
+  background-color: #ffd000;
+  width: 50%;
+  padding: 1rem 0;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  right: 5%;
+  -webkit-transform: translate(-40%, -50%);
+          transform: translate(-40%, -50%);
+}
+
+.location_add2 {
+  right: 5%;
+  -webkit-transform: translate(30%, -50%);
+          transform: translate(30%, -50%);
+  padding: 1rem 0;
+}
+
+.more_btn {
+  padding: 1rem 1rem;
+  border: none;
+  background-color: #06363f;
+  color: white;
+  width: 12rem;
+}
+
+footer {
+  background-color: #06363f;
+  padding: 1.5rem 0;
+  height: 20rem;
+  color: white;
+}
+
+footer #explore {
+  border-bottom: 2px solid gray;
+}
+
+footer #explore #subscribeInput {
+  padding: 1.5rem;
+  width: 20rem;
+  height: 3rem;
+}
+
+footer .footer_links {
+  height: 10rem;
+  padding-top: 2rem;
+}
+
+footer .footer_links ul {
+  list-style: none;
+}
+
+footer .footer_link_header {
+  color: gray;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 992px) {
+  footer {
+    height: 38rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .search-sec img {
+    width: 100%;
+  }
+  .cards_container {
+    display: block;
+  }
+  .nav_links ul {
+    display: block;
+  }
+  .veiw_apartments {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .veiw_apartments .view_btn {
+    margin-top: 1rem;
+  }
+  .company {
+    padding-top: 0 !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .company .company_wrapper {
+    margin: 0;
+  }
+  .appartment,
+  .client,
+  .employee,
+  .awards {
+    margin-top: 1rem;
+  }
+  .appartments_card {
+    width: 100%;
+  }
+  .steps {
+    display: block;
+  }
+  .step-three,
+  .step-two {
+    margin-left: 0;
+  }
+  .add-sec h4 {
+    margin-top: 2rem;
+  }
+  footer {
+    height: 37rem;
+  }
+  footer h4 {
+    padding-top: 1rem;
+  }
+  footer #explore {
+    padding-bottom: 1rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
