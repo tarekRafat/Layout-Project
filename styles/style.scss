@@ -1,330 +1,67 @@
-//global styling
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
+$header1: 2.5rem;
+$header2: 2.5rem;
+$header3: 2.5rem;
+$header4: 1.5rem;
+$text: 1rem;
+$bigfont: 8rem;
+
 $primary: rgb(255, 208, 0);
 $gray: gray;
 $bluish: rgb(4, 4, 54);
 $darkblue: rgb(6, 54, 63);
 $light: rgb(245, 237, 237);
+
 @mixin flex($direction, $justifyContent, $alignItems) {
   display: flex;
   flex-direction: $direction;
   justify-content: $justifyContent;
   align-items: $alignItems;
 }
-//header
-header {
-  padding: 1rem;
-  background-color: white;
-  @include flex(row, space-between, center);
-  .logo_container a {
-    text-decoration: none;
-    color: $gray;
-    &:hover {
-      color: $primary;
-    }
-  }
-  nav {
-    width: 100%;
-  }
-}
-.nav_links {
-  width: 50%;
-  ul {
-    width: 100%;
-    @include flex(row, space-between, center);
-  }
-}
-.nav_link {
-  text-decoration: none;
-  color: $gray;
-  &:hover {
-    color: $primary;
-  }
-}
-.getStarted_container {
-  width: 12rem;
-  @include flex(row, space-between, center);
 
-  button {
-    padding: 0.6rem 0.6rem;
-    background: $primary;
-    border: none;
-    outline: none;
-    border-radius: 5px;
-  }
-}
-//search-section
-.search-sec {
-  position: relative;
-  height: 85.5vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: left;
-  img {
-    z-index: -1;
-    position: absolute;
-    height: 100%;
-    width: 85%;
-    top: 0;
-    right: 0;
-  }
-  h1 {
-    // position: absolute;
-    color: $bluish;
-    top: 30%;
-    right: 55%;
-    font-size: 3.5rem;
-    z-index: 2;
-    text-shadow: 2px 2px $gray;
-  }
-  .search {
-    height: 15rem;
-    padding: 0 6.5rem;
-    @include flex(column, space-between, left);
-  }
+@import "./global";
+@import "./header";
+@import "./search";
+@import "./company";
+@import "./guide";
+@import "./footer";
+@import "./add";
 
-  .contact_details {
-    width: 30rem;
-    @include flex(row, space-between, center);
-    position: absolute;
-    background-color: $primary;
-    bottom: 0;
-    right: 0;
-    font-weight: bold;
-    color: rgb(73, 73, 73);
-    .phone,
-    .location {
-      padding: 1rem;
-    }
-    .phone span,
-    .location span {
-      padding-left: 1rem;
-    }
-    .phone i,
-    .location i {
-      color: white;
-      font-size: 1.2rem;
-    }
-  }
-}
-.search_input {
-  width: 25rem;
-  position: relative;
-  @include flex(row, space-between, stretch);
-}
-.fa-search {
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  left: 15px;
-  color: $gray;
-}
-#searchInput {
-  padding-left: 2rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  width: 80%;
-}
-.search_btn {
-  height: 100%;
-  padding: 1rem;
-  width: 20%;
-  background-color: $primary;
-}
-//company section
-.statistics {
-  height: 55vh;
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: column;
-  align-items: left;
-}
-//appartments section
-.appartments {
-  padding: 1rem;
-  background-color: $light;
-}
-.appartment,
-.client,
-.employee,
-.awards {
-  @include flex(column, center, left);
-  height: 12rem;
-  background-color: $light;
-}
-.appartment_num,
-.client_num,
-.employee_num,
-.awards_num {
-  font-size: 2rem;
-  font-family: "Oxygen";
-  font-style: normal;
-  font-weight: bold;
-  color: $primary;
-}
-.appartment_txt,
-.client_txt,
-.employee_txt,
-.awards_txt {
-  font-weight: bold;
-}
-//apartment details
-.apparetment_img {
-  height: 20rem;
-}
-.room_details,
-.contact_details {
-  width: 50%;
-  font-size: 0.8rem;
-  @include flex(row, space-between, left);
-}
-.appartments_title {
-  font-size: 0.9rem;
-  font-weight: bold;
-}
-.appartments_card {
-  width: 25rem;
-  padding: 1rem;
-}
-.model_card {
-  margin: 1rem;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-.cards_container {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  flex: 0 0.25%;
-}
-.veiw_apartments {
-  width: 45rem;
-  @include flex(row, space-between, center);
-  .view_btn {
-    background: white;
-    padding: 0.8rem 0.8rem;
-    border: 1px solid $bluish;
-    transition: 0.5s ease-in-out;
-    &:hover {
-      background: $primary;
-    }
-  }
-}
-// guide section
-.guide_sec {
-  padding: 2rem;
-}
-.steps {
-  @include flex(row, space-between, center);
-}
-.step-one,
-.step-two,
-.step-three {
-  @include flex(column, space-between, center);
-  position: relative;
-  height: 25rem;
-  margin-top: 1rem;
-  padding: 7rem 2rem 2rem 2rem;
-  background: $primary;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  color: white;
-  overflow: hidden;
-  z-index: 2;
-  .step_num {
-    font-size: 8rem;
-    letter-spacing: -10px;
-    position: absolute;
-    font-weight: 700;
-    top: 0;
-    left: 0;
-    transform: translate(-20%, -48%);
-  }
-}
-.step-two,
-.step-three {
-  background: white;
-  color: black;
-  margin-left: 1rem;
-}
-
-.service_img {
-  height: 100%;
-  width: 100%;
-}
-.meet_agents {
-  background-color: $light;
-}
-
-//Add section
-.awsome_container {
-  position: relative;
-}
-.awsome_img {
-  width: 100%;
-  height: 100%;
-}
-.location_add,
-.location_add2 {
-  background-color: $primary;
-  width: 50%;
-  padding: 1rem 0;
-  position: absolute;
-  @include flex(row, space-evenly, center);
-  right: 5%;
-  transform: translate(-40%, -50%);
-}
-.location_add2 {
-  right: 5%;
-  transform: translate(30%, -50%);
-  padding: 1rem 0;
-}
-.more_btn {
-  padding: 1rem 1rem;
-  border: none;
-  background-color: $darkblue;
-  color: white;
-  width: 12rem;
-}
-footer {
-  background-color: $darkblue;
-  padding: 1.5rem 0;
-  height: 20rem;
-  color: white;
-  #explore {
-    border-bottom: 2px solid $gray;
-    #subscribeInput {
-      padding: 1.5rem;
-      width: 20rem;
-      height: 3rem;
-    }
-  }
-  .footer_links {
-    height: 10rem;
-    padding-top: 2rem;
-    ul {
-      list-style: none;
-    }
-  }
-  .footer_link_header {
-    color: $gray;
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-  }
-}
 //*************media Quary****************/
+//  large
+@media only screen and (max-width: 1469px) {
+  .location_add2 {
+    right: 5%;
+    transform: translate(-40%, -50%) !important;
+  }
+}
 @media only screen and (max-width: 992px) {
   footer {
-    height: 38rem;
+    height: 30rem;
+    #explore {
+      padding: 1rem;
+    }
+    .footer_links {
+      margin-top: 1rem;
+    }
   }
 }
-
+// medium and small screens
 @media only screen and (max-width: 768px) {
   .search-sec img {
     width: 100%;
+  }
+  .getStarted_container {
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    button {
+      background-color: white;
+      text-align: left;
+      padding: 0;
+      &:hover {
+        color: $primary;
+      }
+    }
   }
   .cards_container {
     display: block;
@@ -367,9 +104,12 @@ footer {
   .add-sec h4 {
     margin-top: 2rem;
   }
+  .location_add2 {
+    z-index: 3;
+  }
 
   footer {
-    height: 37rem;
+    height: 40rem;
     h4 {
       padding-top: 1rem;
     }

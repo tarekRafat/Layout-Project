@@ -1,0 +1,42 @@
+//header
+header {
+  padding: 1rem;
+  background-color: white;
+  @include flex(row, space-between, center);
+  .logo_container a {
+    text-decoration: none;
+    color: $gray;
+    &:hover {
+      color: $primary;
+    }
+  }
+  nav {
+    width: 100%;
+  }
+}
+.nav_links {
+  width: 80%;
+  ul {
+    width: 100%;
+    @include flex(row, space-between, center);
+  }
+}
+.nav_link {
+  text-decoration: none;
+  color: $gray;
+  &:hover {
+    color: $primary;
+  }
+}
+.getStarted_container {
+  width: 12rem;
+  @include flex(row, space-between, center);
+
+  button {
+    padding: 0.6rem 0.6rem;
+    background: $primary;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+  }
+}

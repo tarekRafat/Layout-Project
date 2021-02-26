@@ -1,0 +1,78 @@
+//search-section
+.search-sec {
+  position: relative;
+  height: 85.5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: left;
+  img {
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    width: 85%;
+    top: 0;
+    right: 0;
+  }
+  h1 {
+    color: $bluish;
+    top: 30%;
+    right: 55%;
+    font-size: 3.5rem;
+    z-index: 2;
+    text-shadow: 2px 2px $gray;
+  }
+  .search {
+    height: 15rem;
+    padding: 0 6.5rem;
+    @include flex(column, space-between, left);
+  }
+
+  .contact_details {
+    width: 30rem;
+    @include flex(row, space-between, center);
+    position: absolute;
+    background-color: $primary;
+    bottom: 0;
+    right: 0;
+    font-weight: bold;
+    color: rgb(73, 73, 73);
+    .phone,
+    .location {
+      padding: 1rem;
+    }
+    .phone span,
+    .location span {
+      padding-left: 1rem;
+    }
+    .phone i,
+    .location i {
+      color: white;
+      font-size: 1.2rem;
+    }
+  }
+}
+.search_input {
+  width: 25rem;
+  position: relative;
+  @include flex(row, space-between, stretch);
+}
+.fa-search {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 15px;
+  color: $gray;
+}
+#searchInput {
+  padding-left: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 80%;
+}
+.search_btn {
+  height: 100%;
+  padding: 1rem;
+  width: 20%;
+  background-color: $primary;
+}

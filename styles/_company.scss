@@ -1,0 +1,77 @@
+.statistics {
+  height: 55vh;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: left;
+}
+.appartments {
+  padding: 1rem;
+  background-color: $light;
+}
+.appartment,
+.client,
+.employee,
+.awards {
+  @include flex(column, center, left);
+  height: 12rem;
+  background-color: $light;
+}
+.appartment_num,
+.client_num,
+.employee_num,
+.awards_num {
+  font-size: 2rem;
+  font-family: "Oxygen";
+  font-style: normal;
+  font-weight: bold;
+  color: $primary;
+}
+.appartment_txt,
+.client_txt,
+.employee_txt,
+.awards_txt {
+  font-weight: bold;
+}
+//apartment details
+.apparetment_img {
+  height: 20rem;
+}
+.room_details,
+.contact_details {
+  width: 50%;
+  font-size: 0.8rem;
+  @include flex(row, space-between, left);
+}
+.appartments_title {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+.appartments_card {
+  width: 25rem;
+  padding: 1rem;
+}
+.model_card {
+  margin: 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.cards_container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex: 0 0.25%;
+}
+.veiw_apartments {
+  width: 45rem;
+  @include flex(row, space-between, center);
+  .view_btn {
+    background: white;
+    padding: 0.8rem 0.8rem;
+    border: 1px solid $bluish;
+    transition: 0.5s ease-in-out;
+    &:hover {
+      background: $primary;
+      border: 1px solid $primary;
+    }
+  }
+}

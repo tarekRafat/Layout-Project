@@ -1,8 +1,47 @@
+/* Global Styles */
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+li,
+button,
+label,
+input,
+a,
+p {
+  font-size: 1rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+h4,
+h5 {
+  font-size: 1.5rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 header {
@@ -37,7 +76,7 @@ header nav {
 }
 
 .nav_links {
-  width: 50%;
+  width: 80%;
 }
 
 .nav_links ul {
@@ -367,6 +406,7 @@ header nav {
 
 .veiw_apartments .view_btn:hover {
   background: #ffd000;
+  border: 1px solid #ffd000;
 }
 
 .guide_sec {
@@ -426,8 +466,8 @@ header nav {
   font-weight: 700;
   top: 0;
   left: 0;
-  -webkit-transform: translate(-20%, -48%);
-          transform: translate(-20%, -48%);
+  -webkit-transform: translate(-20%, -42%);
+          transform: translate(-20%, -42%);
 }
 
 .step-two,
@@ -444,6 +484,69 @@ header nav {
 
 .meet_agents {
   background-color: #f5eded;
+}
+
+footer {
+  background-color: #06363f;
+  padding: 1rem 0;
+  height: 20rem;
+  color: white;
+}
+
+footer #explore {
+  border-bottom: 2px solid gray;
+}
+
+footer #explore #subscribeInput {
+  padding: 1.5rem;
+  width: 100%;
+  height: 3rem;
+}
+
+footer #explore .subscribe_container {
+  width: 20rem;
+  position: relative;
+}
+
+footer #explore .fa-long-arrow-alt-right {
+  color: gray;
+  font-size: 1.3rem;
+  position: absolute;
+  top: 50%;
+  left: 90%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+footer #explore .fa-long-arrow-alt-right:hover {
+  color: #ffd000;
+  cursor: pointer;
+}
+
+footer .footer_links {
+  height: 10rem;
+  margin-top: 2rem;
+}
+
+footer .footer_links .list_footer {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer .footer_links .list_footer a {
+  text-decoration: none;
+  color: white;
+}
+
+footer .footer_links .list_footer a:hover {
+  color: #ffd000;
+}
+
+footer .footer_link_header {
+  color: gray;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
 }
 
 .awsome_container {
@@ -480,10 +583,8 @@ header nav {
 }
 
 .location_add2 {
-  right: 5%;
   -webkit-transform: translate(30%, -50%);
           transform: translate(30%, -50%);
-  padding: 1rem 0;
 }
 
 .more_btn {
@@ -494,47 +595,49 @@ header nav {
   width: 12rem;
 }
 
-footer {
-  background-color: #06363f;
-  padding: 1.5rem 0;
-  height: 20rem;
-  color: white;
-}
-
-footer #explore {
-  border-bottom: 2px solid gray;
-}
-
-footer #explore #subscribeInput {
-  padding: 1.5rem;
-  width: 20rem;
-  height: 3rem;
-}
-
-footer .footer_links {
-  height: 10rem;
-  padding-top: 2rem;
-}
-
-footer .footer_links ul {
-  list-style: none;
-}
-
-footer .footer_link_header {
-  color: gray;
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
+@media only screen and (max-width: 1469px) {
+  .location_add2 {
+    right: 5%;
+    -webkit-transform: translate(-40%, -50%) !important;
+            transform: translate(-40%, -50%) !important;
+  }
 }
 
 @media only screen and (max-width: 992px) {
   footer {
-    height: 38rem;
+    height: 30rem;
+  }
+  footer #explore {
+    padding: 1rem;
+  }
+  footer .footer_links {
+    margin-top: 1rem;
   }
 }
 
 @media only screen and (max-width: 768px) {
   .search-sec img {
     width: 100%;
+  }
+  .getStarted_container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .getStarted_container button {
+    background-color: white;
+    text-align: left;
+    padding: 0;
+  }
+  .getStarted_container button:hover {
+    color: #ffd000;
   }
   .cards_container {
     display: block;
@@ -595,8 +698,11 @@ footer .footer_link_header {
   .add-sec h4 {
     margin-top: 2rem;
   }
+  .location_add2 {
+    z-index: 3;
+  }
   footer {
-    height: 37rem;
+    height: 40rem;
   }
   footer h4 {
     padding-top: 1rem;
