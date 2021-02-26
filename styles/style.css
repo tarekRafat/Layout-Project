@@ -281,7 +281,7 @@ header nav {
 }
 
 .appartments {
-  padding: 1rem;
+  padding: 2rem;
   background-color: #f5eded;
 }
 
@@ -486,6 +486,60 @@ header nav {
   background-color: #f5eded;
 }
 
+.services_sec {
+  padding-top: 2rem;
+}
+
+.awsome_container {
+  position: relative;
+}
+
+.awsome_img {
+  width: 100%;
+  height: 100%;
+}
+
+.location_add,
+.location_add2 {
+  background-color: #ffd000;
+  width: 50%;
+  padding: 1rem 0;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  right: 5%;
+  -webkit-transform: translate(-40%, -50%);
+          transform: translate(-40%, -50%);
+}
+
+.location_add2 {
+  -webkit-transform: translate(30%, -50%);
+          transform: translate(30%, -50%);
+}
+
+.more_btn {
+  padding: 1rem 1rem;
+  border: none;
+  background-color: #06363f;
+  color: white;
+  width: 12rem;
+}
+
+.veiw_apartments {
+  width: 100%;
+}
+
 footer {
   background-color: #06363f;
   padding: 1rem 0;
@@ -547,52 +601,6 @@ footer .footer_link_header {
   color: gray;
   font-size: 1.2rem;
   margin-bottom: 1rem;
-}
-
-.awsome_container {
-  position: relative;
-}
-
-.awsome_img {
-  width: 100%;
-  height: 100%;
-}
-
-.location_add,
-.location_add2 {
-  background-color: #ffd000;
-  width: 50%;
-  padding: 1rem 0;
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  right: 5%;
-  -webkit-transform: translate(-40%, -50%);
-          transform: translate(-40%, -50%);
-}
-
-.location_add2 {
-  -webkit-transform: translate(30%, -50%);
-          transform: translate(30%, -50%);
-}
-
-.more_btn {
-  padding: 1rem 1rem;
-  border: none;
-  background-color: #06363f;
-  color: white;
-  width: 12rem;
 }
 
 @media only screen and (max-width: 1469px) {
@@ -702,13 +710,44 @@ footer .footer_link_header {
     z-index: 3;
   }
   footer {
-    height: 40rem;
+    height: 30rem;
   }
   footer h4 {
     padding-top: 1rem;
   }
   footer #explore {
     padding-bottom: 1rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .search {
+    padding: 1rem !important;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .search h1 {
+    font-size: 2.5rem;
+  }
+  .search .search_input {
+    width: 22rem;
+  }
+  .contact_details {
+    width: 100% !important;
+  }
+  footer {
+    height: 36rem;
+  }
+  footer h1 {
+    font-size: 2rem !important;
+  }
+  .appartments h2 {
+    font-size: 1.5rem !important;
+    display: inline !important;
   }
 }
 /*# sourceMappingURL=style.css.map */

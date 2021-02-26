@@ -23,8 +23,8 @@ $light: rgb(245, 237, 237);
 @import "./search";
 @import "./company";
 @import "./guide";
-@import "./footer";
 @import "./add";
+@import "./footer";
 
 //*************media Quary****************/
 //  large
@@ -45,7 +45,7 @@ $light: rgb(245, 237, 237);
     }
   }
 }
-// medium and small screens
+// medium screens
 @media only screen and (max-width: 768px) {
   .search-sec img {
     width: 100%;
@@ -109,12 +109,40 @@ $light: rgb(245, 237, 237);
   }
 
   footer {
-    height: 40rem;
+    height: 30rem;
     h4 {
       padding-top: 1rem;
     }
     #explore {
       padding-bottom: 1rem;
     }
+  }
+}
+// small screens
+@media only screen and (max-width: 600px) {
+  .search {
+    padding: 1rem !important;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    h1 {
+      font-size: $header3;
+    }
+    .search_input {
+      width: 22rem;
+    }
+  }
+  .contact_details {
+    width: 100% !important;
+  }
+  footer {
+    height: 36rem;
+  }
+  footer h1 {
+    font-size: 2rem !important;
+  }
+  .appartments h2 {
+    font-size: $header4 !important;
+    display: inline !important;
   }
 }
